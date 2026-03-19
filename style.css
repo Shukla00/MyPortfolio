@@ -2,26 +2,26 @@
    VARIABLES & DESIGN SYSTEM
    ========================================= */
 :root {
-    --bg-dark: #050505;
-    --bg-card: rgba(20, 20, 22, 0.6);
-    --bg-card-hover: rgba(30, 30, 35, 0.8);
+    --bg-dark: #110720;
+    --bg-card: rgba(0, 0, 0, 0.2);
+    --bg-card-hover: rgba(192, 132, 252, 0.05);
     
-    --text-main: #f0f0f0;
-    --text-muted: #a0a0b0;
+    --text-main: #FFFFFF;
+    --text-muted: #A1A1AA;
     
-    --accent-primary: #00f0ff;
-    --accent-secondary: #ff0055;
-    --accent-tertiary: #b92b27;
+    --accent-primary: #C084FC;
+    --accent-secondary: #9333EA;
+    --accent-tertiary: #581C87;
     
     --nav-height: 80px;
     
-    --font-heading: 'Outfit', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
     --font-body: 'Poppins', sans-serif;
     
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     
-    --glass-border: 1px solid rgba(255, 255, 255, 0.05);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    --glass-border: 1px solid rgba(192, 132, 252, 0.2);
+    --glass-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 /* =========================================
@@ -80,9 +80,9 @@ ul {
 .glow-1 {
     top: -10%;
     right: -5%;
-    width: 50vw;
-    height: 50vw;
-    background: radial-gradient(circle, var(--accent-primary) 0%, transparent 70%);
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, rgba(147, 51, 234, 0.3) 0%, transparent 60%);
 }
 
 .glow-2 {
@@ -90,17 +90,17 @@ ul {
     left: -10%;
     width: 60vw;
     height: 60vw;
-    background: radial-gradient(circle, var(--accent-secondary) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(192, 132, 252, 0.25) 0%, transparent 60%);
     animation-delay: -5s;
 }
 
 .glow-3 {
     top: 40%;
     left: 30%;
-    width: 30vw;
-    height: 30vw;
-    background: radial-gradient(circle, #8a2be2 0%, transparent 70%);
-    opacity: 0.1;
+    width: 40vw;
+    height: 40vw;
+    background: radial-gradient(circle, rgba(88, 28, 135, 0.3) 0%, transparent 60%);
+    opacity: 0.15;
     animation-delay: -10s;
 }
 
@@ -354,22 +354,22 @@ h1, h2, h3, h4 {
 }
 
 .name {
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(3rem, 6vw, 4.5rem);
     line-height: 1.1;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #fff, #a0a0b0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 .role {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
     color: var(--text-muted);
     margin-bottom: 1.5rem;
 }
 
 .typing-text {
-    color: var(--accent-primary);
+    color: var(--text-main);
+    font-weight: 600;
 }
 
 .cursor {
@@ -498,16 +498,17 @@ h1, h2, h3, h4 {
 .skill-category {
     background: var(--bg-card);
     padding: 2.5rem;
-    border-radius: 20px;
+    border-radius: 24px;
     border: var(--glass-border);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     box-shadow: var(--glass-shadow);
     transition: var(--transition);
 }
 
 .skill-category:hover {
-    transform: translateY(-10px);
-    border-color: rgba(0, 240, 255, 0.3);
+    transform: translateY(-5px);
+    border-color: rgba(192, 132, 252, 0.4);
+    background: var(--bg-card-hover);
 }
 
 .skill-category h3 {
@@ -558,9 +559,9 @@ h1, h2, h3, h4 {
 .project-card {
     background: var(--bg-card);
     border: var(--glass-border);
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 2rem;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
     transition: var(--transition);
     height: 100%;
     display: flex;
@@ -568,13 +569,15 @@ h1, h2, h3, h4 {
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 240, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(192, 132, 252, 0.4);
+    background: var(--bg-card-hover);
 }
 
 .project-card:hover .folder-icon {
     color: var(--accent-primary);
+    transform: scale(1.05);
 }
 
 .project-header {

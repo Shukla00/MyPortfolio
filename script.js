@@ -4,7 +4,7 @@
 const typedTextSpan = document.querySelector(".typing-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["B.Tech Student", "MERN Stack Dev", "Aspiring AI Engineer"];
+const textArray = ["Vinayak Shukla", "Full Stack Developer", "Aspiring AI Engineer"];
 const typingDelay = 100;
 const erasingDelay = 80;
 const newTextDelay = 2000;
@@ -102,10 +102,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
 window.addEventListener("scroll", reveal);
 window.addEventListener("scroll", updateNavbar);
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Start typing effect slightly after load
     if (textArray.length) setTimeout(type, newTextDelay + 250);
-    
+
     // Check initial scroll position
     reveal();
     updateNavbar();

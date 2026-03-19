@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,15 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="background-effects">
         <div class="glow glow-1"></div>
@@ -55,16 +59,32 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero section">
-            <div class="container hero-container">
-                <div class="hero-content reveal">
-                    <p class="greeting">Hi, my name is</p>
-                    <h1 class="name">Vinayak Shukla</h1>
-                    <h2 class="role">I'm a <span class="typing-text"></span><span class="cursor">&nbsp;</span></h2>
-                    <p class="bio">
-                        A passionate 4th-year B.Tech Information Technology student at Goel Institute of Technology and Management, Lucknow. I love building web applications and exploring the fascinating world of Artificial Intelligence.
+            <div class="container hero-container" style="justify-content: center; text-align: center;">
+                <div class="hero-content reveal"
+                    style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+                    <p class="greeting" style="color: #fff; font-size: 1.2rem; margin-bottom: 2rem;">Hello! I Am <span
+                            style="color: var(--accent-primary); font-weight: 600;">Vinayak Shukla</span></p>
+
+                    <h2 class="role" style="font-size: clamp(1.5rem, 3vw, 2rem); color: #fff; margin-bottom: 0;">A
+                        Developer who</h2>
+                    <h1 class="name" style="font-size: clamp(3rem, 6vw, 4.5rem); margin-bottom: 0.5rem;">
+                        Builds the <span class="highlight"
+                            style="border-bottom: 2px solid var(--accent-primary); border-radius: 50px; padding: 0 10px;">Future</span>...
+                    </h1>
+                    <p style="font-size: 1rem; color: var(--text-muted); margin-bottom: 3rem;">Because if the logic
+                        isn't sound, what else can be?</p>
+
+                    <h2 class="role" style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: #fff;">I'm a
+                        <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+
+                    <p class="bio" style="text-align: center;">
+                        Currently in my exploration phase new technologies and AI.<br>A self-taught developer, exploring
+                        the industry and Artificial Intelligence.<br>I make meaningful and efficient digital products
+                        that create an equilibrium between user needs and technical excellence.
                     </p>
-                    <div class="hero-cta">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <div class="hero-cta" style="justify-content: center; margin-top: 1rem;">
+                        <a href="#contact" class="btn btn-primary" style="margin-right: 1rem;">Get In Touch</a>
                         <a href="#projects" class="btn btn-secondary">View Work</a>
                     </div>
                 </div>
@@ -77,8 +97,14 @@
                 <h2 class="section-title reveal">About <span class="highlight">Me</span></h2>
                 <div class="about-content reveal">
                     <div class="about-text">
-                        <p>Hello! I'm <strong>Vinayak Shukla</strong>, an aspiring software engineer based in <strong>Lucknow, India</strong>. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
-                        <p>Currently in my 4th year of B.Tech Information Technology, I am constantly learning new things. My current focus is mastering the <strong>MERN Stack</strong> while simultaneously exploring algorithms and models that power <strong>Artificial Intelligence</strong>.</p>
+                        <p>Hello! I'm <strong>Vinayak Shukla</strong>, an aspiring software engineer based in
+                            <strong>Lucknow, India</strong>. I enjoy turning complex problems into simple, beautiful,
+                            and intuitive designs.
+                        </p>
+                        <p>Currently - I am constantly learning new things. My current focus is mastering the
+                            <strong>MERN Stack</strong> while simultaneously exploring algorithms and models that power
+                            <strong>Artificial Intelligence</strong>.
+                        </p>
                         <ul class="about-bullets">
                             <li><i class="fas fa-graduation-cap"></i> B.Tech in IT (4th Year)</li>
                             <li><i class="fas fa-map-marker-alt"></i> Lucknow, Uttar Pradesh</li>
@@ -118,6 +144,7 @@
                             <span class="skill-pill"><i class="fab fa-html5"></i> HTML5</span>
                             <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS3</span>
                             <span class="skill-pill"><i class="fas fa-c"></i> C/C++</span>
+                            <span class="skill-pill"><i class="fas fa-c"></i> Django</span>
                         </div>
                     </div>
                     <!-- Other -->
@@ -138,19 +165,21 @@
             <div class="container">
                 <h2 class="section-title reveal">Featured <span class="highlight">Projects</span></h2>
                 <div class="projects-grid reveal">
-                    
+
                     <!-- Project 1 -->
                     <div class="project-card">
                         <div class="project-content">
                             <div class="project-header">
                                 <i class="far fa-folder-open folder-icon"></i>
                                 <div class="project-links">
-                                    <a href="https://github.com/Shukla00/Assistant" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/Shukla00/Assistant" target="_blank"
+                                        rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <h3 class="project-title">Small Desktop Assistant</h3>
                             <p class="project-description">
-                                A Python-based desktop assistant designed to handle small daily tasks efficiently. Built as an exploration into automation and scripting.
+                                A Python-based desktop assistant designed to handle small daily tasks efficiently. Built
+                                as an exploration into automation and scripting.
                             </p>
                             <ul class="project-tech">
                                 <li>Python</li>
@@ -165,12 +194,14 @@
                             <div class="project-header">
                                 <i class="far fa-folder-open folder-icon"></i>
                                 <div class="project-links">
-                                    <a href="https://github.com/Shukla00/MyPortfolio.git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/Shukla00/MyPortfolio.git" target="_blank"
+                                        rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <h3 class="project-title">My Portfolio</h3>
                             <p class="project-description">
-                                A personal portfolio website to showcase my skills, projects, and experience as a developer.
+                                A personal portfolio website to showcase my skills, projects, and experience as a
+                                developer.
                             </p>
                             <ul class="project-tech">
                                 <li>HTML</li>
@@ -186,13 +217,15 @@
                             <div class="project-header">
                                 <i class="far fa-folder-open folder-icon"></i>
                                 <div class="project-links">
-                                    <a href="https://github.com/Shukla00/EduNexus.git" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/Shukla00/EduNexus.git" target="_blank"
+                                        rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                             <h3 class="project-title">AI Enabled College ERP</h3>
                             <p class="project-description">
-                                A concept project for a college ERP system enhanced with AI features for personalized student support and administrative efficiency.
-                            
+                                A concept project for a college ERP system enhanced with AI features for personalized
+                                student support and administrative efficiency.
+
                             <ul class="project-tech">
                                 <li>Django for Backend</li>
                                 <li>React for Frontend</li>
@@ -207,12 +240,16 @@
         <!-- Contact Section -->
         <section id="contact" class="contact section">
             <div class="container">
-                <div class="contact-content reveal">
-                    <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="contact-content reveal"
+                    style="background: var(--bg-card); border-radius: 24px; padding: 4rem 2rem; border: var(--glass-border); backdrop-filter: blur(8px); box-shadow: var(--glass-shadow);">
+                    <h2 class="section-title" style="margin-bottom: 2rem;">Get In <span class="highlight">Touch</span>
+                    </h2>
                     <p class="contact-text">
-                        I'm currently looking for new opportunities to learn and grow as a developer. Whether you have a question, a project idea, or just want to say hi, my inbox is always open!
+                        I'm currently looking to join a cross-functional team that values improving people's lives
+                        through accessible design, or have a project in mind? Let's connect!
                     </p>
-                    <a href="mailto:vinayaksh2408@gmail.com" class="btn btn-primary" id="mailto-btn">Say Hello <i class="fas fa-paper-plane"></i></a>
+                    <a href="mailto:vinayaksh2408@gmail.com" class="btn btn-primary" id="mailto-btn">Say Hello <i
+                            class="fas fa-paper-plane"></i></a>
                 </div>
             </div>
         </section>
@@ -225,10 +262,12 @@
                 <a href="https://github.com/Shukla00" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/vinayak-shukla/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/vinayak-shukla/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="https://x.com/Vinayak_shukla1" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+                <a href="https://x.com/Vinayak_shukla1" target="_blank" rel="noopener noreferrer"
+                    aria-label="Twitter / X">
                     <i class="fab fa-twitter"></i>
                 </a>
             </div>
@@ -239,4 +278,5 @@
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
+
 </html>
