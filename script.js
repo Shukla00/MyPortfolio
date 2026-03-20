@@ -4,7 +4,7 @@
 const typedTextSpan = document.querySelector(".typing-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Vinayak Shukla", "Full Stack Developer", "Aspiring AI Engineer"];
+const textArray = ["Vinayak Shukla", "A Full Stack Developer", "An Aspiring AI Engineer"];
 const typingDelay = 100;
 const erasingDelay = 80;
 const newTextDelay = 2000;
